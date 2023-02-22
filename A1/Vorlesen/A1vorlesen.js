@@ -21,8 +21,13 @@ document.getElementById("speak-button-A11111").addEventListener("click", functio
   utterance.lang = 'es-ES';
   utterance.rate = 0.75;
 
-  // Set the voice to the default voice of the user's device
-  utterance.voice = speechSynthesis.getVoices().filter(function (voice) { return voice.default; })[0];
+  // Filter the available voices to only include Spanish voices
+  const spanishVoices = speechSynthesis.getVoices().filter(function (voice) {
+    return voice.lang.startsWith('es-') && voice.localService;
+  });
+
+  // Set the voice to the first Spanish voice in the list, or the default voice if there are no Spanish voices
+  utterance.voice = spanishVoices.length > 0 ? spanishVoices[0] : speechSynthesis.getVoices().filter(function (voice) { return voice.default; })[0];
 
   // Check if previous utterance is still speaking
   if (synth.speaking) {
