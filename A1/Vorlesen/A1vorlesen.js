@@ -19,23 +19,16 @@ document.getElementById("speak-button-A11111").addEventListener("click", functio
   const synth = window.speechSynthesis;
   const utterance = new SpeechSynthesisUtterance(sentence);
   utterance.lang = 'es-ES';
-  utterance.rate = 1;
+  utterance.rate = 0.75;
 
-  // Wait for the `voiceschanged` event to be fired before selecting the voice
-  synth.onvoiceschanged = function () {
-    const voices = synth.getVoices();
-    utterance.voice = speechSynthesis.getVoices().filter(function (voice) { return voice.lang === 'es-ES'; })[0];
+  // Set the voice to the default voice of the user's device
+  utterance.voice = speechSynthesis.getVoices().filter(function (voice) { return voice.default; })[0];
 
-    // Check if previous utterance is still speaking
-    if (synth.speaking) {
-      synth.cancel(); // Stop previous utterance
-    }
-
-    synth.speak(utterance);
-  };
-
-  // Check if voices are already loaded
-  if (synth.getVoices().length !== 0) {
-    synth.onvoiceschanged();
+  // Check if previous utterance is still speaking
+  if (synth.speaking) {
+    synth.cancel(); // Stop previous utterance
   }
+
+  synth.speak(utterance);
 });
+
