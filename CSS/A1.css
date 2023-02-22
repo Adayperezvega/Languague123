@@ -352,3 +352,27 @@ transform: translateY(-2px);
     }
     
     }
+
+.speaking {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #1d7e8d;
+  animation: speaking 1s infinite ease-in-out;
+}
+
+@keyframes speaking {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
