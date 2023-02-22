@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "spanish": "el gato juega con el perro en el parque",
+    "falsch": "el gatto juega con el perro en el parque"
+  },
+  {
+    "id": 2,
+    "spanish": "el teléfono",
+    "falsch": "el telefono"
+  },
+  {
+    "id": 3,
+    "spanish": "el jugador de fútbol",
+    "falsch": "el jugador de futbol"
+  },
+  {
+    "id": 4,
+    "spanish": "el ratón",
+    "falsch": "el raton"
+  },
+  {
+    "id": 5,
+    "spanish": "esta palabra es esdrújula",
+    "falsch": "esta palabra es esdrujula"
+  },
+  {
+    "id": 6,
+    "spanish": "Austria",
+    "falsch": "Österreich"
+  },
+  {
+    "id": 7,
+    "spanish": "el ruido",
+    "falsch": "das Geräusch"
+  },
+  {
+    "id": 8,
+    "spanish": "Suiza",
+    "falsch": "die Schweiz"
+  },
+  {
+    "id": 9,
+    "spanish": "la manzana",
+    "falsch": "der Apfel"
+  },
+  {
+    "id": 10,
+    "spanish": "el perro",
+    "falsch": "der Hund / die Hündin"
+  },
+  {
+    "id": 11,
+    "spanish": "el gato",
+    "falsch": "die Katze"
+  },
+  {
+    "id": 12,
+    "spanish": "el coche",
+    "falsch": "das Auto"
+  },
+  {
+    "id": 13,
+    "spanish": "la casa",
+    "falsch": "das Haus"
+  },
+  {
+    "id": 14,
+    "spanish": "la mesa",
+    "falsch": "der Tisch"
+  },
+  {
+    "id": 15,
+    "spanish": "el vaso",
+    "falsch": "das Glas"
+  },
+  {
+    "id": 16,
+    "spanish": "la silla",
+    "falsch": "der Stuhl"
+  },
+  {
+    "id": 17,
+    "spanish": "la leche",
+    "falsch": "die Milch"
+  },
+  {
+    "id": 18,
+    "spanish": "el agua",
+    "falsch": "das Wasser"
+  },
+  {
+    "id": 19,
+    "spanish": "el pan",
+    "falsch": "das Brot"
+  },
+  {
+    "id": 20,
+    "spanish": "el queso",
+    "falsch": "der Käse"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "spanish": "la fotografía",
+    "german": "das Foto"
+  },
+  {
+    "id": 2,
+    "spanish": "el comentario",
+    "german": "der Kommentar"
+  },
+  {
+    "id": 3,
+    "spanish": "internacional",
+    "german": "international"
+  },
+  {
+    "id": 4,
+    "spanish": "la palabra",
+    "german": "das Wort"
+  },
+  {
+    "id": 5,
+    "spanish": "Alemania",
+    "german": "Deutschland"
+  },
+  {
+    "id": 6,
+    "spanish": "Austria",
+    "german": "Österreich"
+  },
+  {
+    "id": 7,
+    "spanish": "el ruido",
+    "german": "das Geräusch"
+  },
+  {
+    "id": 8,
+    "spanish": "Suiza",
+    "german": "die Schweiz"
+  },
+  {
+    "id": 9,
+    "spanish": "el sonido",
+    "german": "der Ton"
+  },
+  {
+    "id": 10,
+    "spanish": "el libro",
+    "german": "das Buch"
+  },
+  {
+    "id": 11,
+    "spanish": "el lápiz",
+    "german": "der Stift"
+  },
+  {
+    "id": 12,
+    "spanish": "el papel",
+    "german": "das Papier"
+  },
+  {
+    "id": 13,
+    "spanish": "el periódico",
+    "german": "die Zeitung"
+  },
+  {
+    "id": 14,
+    "spanish": "el café",
+    "german": "das Kaffee"
+  },
+  {
+    "id": 15,
+    "spanish": "el té",
+    "german": "der Tee"
+  }
+]

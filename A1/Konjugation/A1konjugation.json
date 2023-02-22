@@ -1,0 +1,15 @@
+[
+    {
+      "verb": "hablar",
+      "conjugation": ["hablo", "hablas", "habla", "hablamos", "habláis", "hablan"]
+    },
+    {
+      "verb": "comer",
+      "conjugation": ["como", "comes", "come", "comemos", "coméis", "comen"]
+    },
+    {
+      "verb": "vivir",
+      "conjugation": ["vivo", "vives", "vive", "vivimos", "vivís", "viven"]
+    }
+  ]
+  

@@ -1,0 +1,212 @@
+/* Reset default styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Add font */
+body {
+  margin: 0;
+  font-family: 'Nunito';
+}
+
+/* Header styles */
+header {
+  background-color: #5ca1d0;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 1em;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Drop down menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  color: #fff;
+  background-color: #cdcbcb;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Logo*/
+img {
+  float: right;
+  width: 200px;
+  height: 30px;
+  margin-right: 1em;
+}
+
+
+/* Main content styles */
+main {
+  padding: em;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 2em;
+  background-color: #0079c971;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Index Main content and container */
+/* Main content styles */
+
+
+/* Main content and container */
+.main-content {
+  background-color: rgba(255, 255, 255, 0.636);
+  background-image: url(/Images/Image\ index.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.main-content-container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 5em;
+  text-align: center;
+}
+
+
+.main-content-container h2,
+.main-content-container p {
+  color: rgb(77, 77, 77);
+  padding: 0em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+
+
+}
+
+
+/* Sign up and login form styles */
+.login-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 49%;
+  text-align: center;
+}
+
+
+.login-form h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label,
+input[type="submit"] {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  height: 30px;
+  padding: 0.5em;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  background-color: #1d7e8d;
+  color: white;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #00d3c5;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+

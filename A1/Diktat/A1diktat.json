@@ -1,0 +1,52 @@
+[
+    {
+    "id": 1,
+    "spanish": "Los gatos son animales",
+    "diktat": "Los gatos son animales"
+    },
+    {
+    "id": 2,
+    "spanish": "el teléfono",
+    "diktat": "el teléfono"
+    },
+    {
+    "id": 3,
+    "spanish": "el perro",
+    "diktat": "el perro"
+    },
+    {
+    "id": 4,
+    "spanish": "la casa",
+    "diktat": "la casa"
+    },
+    {
+    "id": 5,
+    "spanish": "el libro",
+    "diktat": "el libro"
+    },
+    {
+    "id": 6,
+    "spanish": "el ordenador",
+    "diktat": "el ordenador"
+    },
+    {
+    "id": 7,
+    "spanish": "la silla",
+    "diktat": "la silla"
+    },
+    {
+    "id": 8,
+    "spanish": "la mesa",
+    "diktat": "la mesa"
+    },
+    {
+    "id": 9,
+    "spanish": "el cuaderno",
+    "diktat": "el cuaderno"
+    },
+    {
+    "id": 10,
+    "spanish": "el lápiz",
+    "diktat": "el lápiz"
+    }
+    ]

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Institut für SSK</title>
+  <link href='https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="/CSS/Color.css">
+  <link rel="stylesheet" type="text/css" href="/CSS/A1.css">
+</head>
+
+<body>
+  <header>
+    <a href="/index.html">
+      <img src="/Logo/Logo definitiv.png" alt="Company Logo">
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="#">Stufe</a>
+            <ul class="dropdown-content">
+              <li><a href="/A1/A1.html">A1</a></li>
+              <li><a href="/A2/A2.html">A2</a></li>
+              <li><a href="B1.html">B1</a></li>
+              <li><a href="B2.html">B2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <h2 class="level-heading">Willkommen auf der Stufe A1</h2>
+<!-- Vokabular Section-->
+<div class="section-container A1">
+  <a class="section-toggle A1" href="#">Vokabular</a>
+  <div class="content hidden">
+    <h3 id="task-description" class="task-description">Wenn Sie auf Start klicken wird ein Satz vorgezeigt, Sie
+      müssen es übersetzen</h3>
+    <button id="start-button" class="start-button">Start</button>
+    <h3 id="translate-sentence" class="Translate-sentence hidden">Übersetzen Sie folgende Wörter:</h3>
+    <div id="progress-bar-container" class="progress-bar-container hidden">
+      <div class="progress-bar"></div>
+    </div>    
+    <div id="actual-sentence" class="actual-sentence hidden">
+      <p>Satz: <span id="current-sentence-number" contenteditable="true"></span>/<span id="total-sentence-number">0</span></p>
+      <p id="current-sentence"></p>
+    </div>
+    <div id="sentence" class="sentence hidden"></div>
+    <div id="input-container" class="input-container hidden">
+      <input type="text" id="translation-input" class="translation-input hidden">
+      <div id="feedback"></div>
+      <button id="check-button" onclick="checkTranslation()">Überprüfen</button>
+      <div style="display: flex;">
+        <button id="previous-button" style="margin-right: 10px;" onclick="previousSentence()">Zurück</button>
+        <button id="next-button" onclick="nextSentence()">Weiter</button>
+      </div>
+    </div>
+    <div id="score-container" class="score-container hidden">
+      <p id="score" class="score hidden">Score:</p>
+    </div>
+    <div class="section-status"></div>
+    <button class="section-next-button hidden">Next Section</button>
+  </div>
+</div>
+
+
+    <!-- Grammatik Section -->
+    <div class="section-container-A11">
+      <a class="section-toggle-A11" href="#">Grammatik</a>
+      <div class="content-A11 hidden">
+        <h3 id="task-description-A11" class="task-description-A11">Wenn Sie auf Start klicken wird ein Satz vorgelesen
+        </h3>
+        <button id="start-button-A11" class="start-button-A11">Start</button>
+        <h3 id="translate-sentence-A11" class="Translate-sentence-A11 hidden">Schreiben Sie den Satz richtig:</h3>
+        <div id="actual-sentence-A11" class="actual-sentence-A11 hidden">
+          <p>Satz: <span id="current-sentence-number-A11">0</span>/<span id="total-sentence-number-A11">0</span></p>
+          <p id="current-sentence-A11"></p>
+        </div>
+        <div id="sentence-A11" class="sentence-A11 hidden"></div>
+        <div id="input-container-A11" class="input-container-A11 hidden">
+          <input type="text" id="translation-input-A11" class="translation-input-A11 hidden">
+          <div id="feedback-A11"></div>
+          <button id="check-button-A11" class="check-button-A11 hidden"
+            onclick="checkTranslationA11()">Überprüfen</button>
+          <div style="display: flex;">
+            <button id="previous-button-A11" class="previous-button-A11 hidden" style="margin-right: 10px;"
+              onclick="previousSentenceA11()">Zurück</button>
+            <button id="repeat-button-A11" class="repeat-button-A11 hidden"
+              onclick="speakSentenceA11()">Wiederholen</button>
+            <button id="next-button-A11" class="next-button-A11 hidden" onclick="nextSentenceA11()">Weiter</button>
+          </div>
+        </div>
+        <div id="score-container-A11" class="score-container-A11 hidden">
+          <p id="score-A11" class="score-A11 hidden">Score:</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Diktat section content here -->
+    <div class="section-container-A111">
+      <a class="section-toggle-A111" href="#">Diktat</a>
+      <div class="content-A111 hidden">
+        <h3 id="task-description-A111" class="task-description-A111">Wenn Sie auf Start klicken wird ein Satz vorgelesen
+        </h3>
+        <button id="start-button-A111" class="start-button-A111">Start</button>
+        <h3 id="translate-sentence-A111" class="Translate-sentence-A111 hidden">Schreiben Sie was Sie gehört haben</h3>
+        <div id="actual-sentence-A111" class="actual-sentence-A111 hidden">
+          <p>Satz: <span id="current-sentence-number-A111">0</span>/<span id="total-sentence-number-A111">0</span></p>
+          <p id="current-sentence-A111"></p>
+        </div>
+        <div id="sentence-A111" class="sentence-A111 hidden"></div>
+        <div id="input-container-A111" class="input-container-A111 hidden">
+          <input type="text" id="translation-input-A111" class="translation-input-A111 hidden">
+          <div id="feedback-A111"></div>
+          <button class="check-button-A111 hidden" id="check-button-A111"
+            onclick="checkTranslationA111()">Überprüfen</button>
+          <div style="display: flex;">
+            <button id="repeat-button-A111" class="repeat-button-A111 hidden"
+              style="margin-right: 10px;">Wiederholen</button>
+            <button id="next-button-A111" class="next-button-A111 hidden" onclick="nextSentenceA111()">Weiter</button>
+          </div>
+        </div>
+        <div id="score-container-A111" class="score-container-A111 hidden">
+          <p id="score-A111" class="score-A111 hidden">Score:</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Konjugation -->
+    <div class="section-container-A1111">
+      <a class="section-toggle-A1111" href="#">Konjugation</a>
+      <div class="content-A1111 hidden">
+        <h3 id="task-description-A1111" class="task-description-A1111">Wenn Sie auf Start klicken wird ein Verb
+          angezeigt und Sie müssen es konjugieren</h3>
+        <button id="start-button-A1111" class="start-button-A1111">Start</button>
+        <h3 id="translate-sentence-A1111" class="Translate-sentence-A1111 hidden">Konjugieren Sie folgendes verb:</h3>
+        <div id="actual-sentence-A1111" class="actual-sentence-A1111 hidden">
+          <p>Verb: <span id="current-sentence-number-A1111">0</span>/<span id="total-sentence-number-A1111">0</span></p>
+          <p id="current-sentence-A1111"></p>
+        </div>
+        <div id="sentence-A1111" class="sentence-A1111 hidden"></div>
+        <div id="input-container-A1111" class="input-container-A1111 hidden">
+          <div style="display: flex;">
+            <div style="width: 50%;">
+              <label for="yo-input-A1111">yo:</label>
+              <input type="text" id="yo-input-A1111" class="conjugation-input-A1111">
+              <div id="yo-feedback-A1111"></div>
+              <label for="tú-input-A1111">tú:</label>
+              <input type="text" id="tú-input-A1111" class="conjugation-input-A1111">
+              <div id="tú-feedback-A1111"></div>
+              <label for="él/ella-input-A1111">él/ella:</label>
+              <input type="text" id="él/ella-input-A1111" class="conjugation-input-A1111">
+              <div id="él/ella-feedback-A1111"></div>
+            </div>
+            <div style="width: 50%;">
+              <label for="nosotros/nosotras-input-A1111">nosotros/nosotras:</label>
+              <input type="text" id="nosotros/nosotras-input-A1111" class="conjugation-input-A1111">
+              <div id="nosotros/nosotras-feedback-A1111"></div>
+              <label for="vosotros/vosotras-input-A1111">vosotros/vosotras:</label>
+              <input type="text" id="vosotros/vosotras-input-A1111" class="conjugation-input-A1111">
+              <div id="vosotros/vosotras-feedback-A1111"></div>
+              <label for="ellos/ellas-input-A1111">ellos/ellas:</label>
+              <input type="text" id="ellos/ellas-input-A1111" class="conjugation-input-A1111">
+              <div id="ellos/ellas-feedback-A1111"></div>
+            </div>
+          </div>
+          <button id="check-button-A1111" class="check-button-A1111 hidden"
+            onclick="checkTranslationA1111()">Überprüfen</button>
+          <div style="display: flex;">
+            <button id="previous-button-A1111" class="previous-button-A1111 hidden" style="margin-right: 10px;"
+              onclick="previousSentenceA1111()">Zurück</button>
+            <button id="next-button-A1111" class="next-button-A1111 hidden"
+              onclick="nextSentenceA1111()">Weiter</button>
+          </div>
+        </div>
+        <div id="score-container-A1111" class="score-container-A1111 hidden">
+          <p id="score-A1111" class="score-A1111 hidden">Score:</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Vorlesen Section -->
+    <div class="section-container-A11111">
+      <a class="section-toggle-A11111" href="#">Vorlesen</a>
+      <div class="content-A11111 hidden">
+        <h3 id="task-description-A11111" class="task-description-A11111">Wenn Sie auf Start klicken wird ein Satz
+          vorgelesen</h3>
+        <button id="start-button-A11111" class="start-button-A11111">Start</button>
+        <h3 id="translate-sentence-A11111" class="Translate-sentence-A11111 hidden">Schreiben Sie was vorgelesen werden
+          soll:</h3>
+        <div id="input-container-A11111" class="input-container-A11111 hidden">
+          <input type="text" id="translation-input-A11111" class="translation-input-A11111 hidden">
+          <button id="speak-button-A11111" class="speak-button-A11111 hidden" onclick="speakA11111()">Vorlesen</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+  <footer>
+    <p>Copyright &copy; Institut für Spanische Sprache und Kultur</p>
+  </footer>
+  <script src="/A1/Vokabular/A1vokabular.js"></script>
+  <script src="/A1/Grammatik/A1grammatik.js"></script>
+  <script src="/A1/Diktat/A1diktat.js"></script>
+  <script src="/A1/Konjugation/A1konjugation.js"></script>
+  <script src="/A1/Vorlesen/A1vorlesen.js"></script>
+  <script src="/A1/A1Header.js"></script>
+  <script src="login.js"></script>
+
+  <script>
+    window.onload = function () {
+      getSentence();
+    }
+  </script>
+
+</body>
+
+</html>

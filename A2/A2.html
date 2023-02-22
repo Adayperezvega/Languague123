@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learn Spanish</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="Color.css">
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="Logo/Logo definitiv.png" alt="Company Logo">
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="#">Stufe</a>
+            <ul class="dropdown-content">
+              <li><a href="A1.html">A1</a></li>
+              <li><a href="A2.html">A2</a></li>
+              <li><a href="B1.html">B1</a></li>
+              <li><a href="B2.html">B2</a></li>
+            </ul>
+          </li>
+          <li><a href="#quizzes">Quizzes</a></li>
+          <li><a href="#progress">Progress</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+        <h2 class="level-heading">Willkommen auf der Stufe A2</h2>
+        <!-- Vokabular Section-->
+        <div class="section-container A1">
+            <a class="section-toggle A1" href="#">Vokabular</a>
+            <div class="content hidden">
+            <button id="start-button" class="start-button">Start</button>
+            <h3 id="translate-sentence" class="Translate-sentence hidden" >Übersetzen Sie folgende Wörter:</h3>
+              <div id="sentence" class="sentence hidden"></div>
+              <div id="input-container" class="input-container hidden">
+                <input type="text" id="translation-input" class="translation-input hidden">
+                <div id="feedback"></div>
+                <button id="check-button" onclick="checkTranslation()">Überprüfen</button>
+                <button id="next-button" onclick="nextSentence()">Weiter</button>
+              </div>
+              <div id="score-container" class="score-container hidden">
+                <p id="score" class="score hidden">Score:</p>
+              </div>        
+            </div>
+          </div>      
+
+        
+    <!-- A2 section content here -->
+        <div class="section-container-A2">
+            <a class="section-toggle-A2" href="#">Grammatik</a>
+            <div class="content-A2 hidden">
+            <button id="start-button-A2" class="start-button-A2">Start</button>
+            <h3 id="translate-sentence-A2" class="Translate-sentence-A2 hidden" >Übersetzen Sie folgendes Satz:</h3>
+             <div id="sentence-A2" class="sentence-A2 hidden"></div>
+                <div id="input-container-A2" class="input-container-A2 hidden">
+                <input type="text" id="translation-input-A2" class="translation-input-A2 hidden">
+                 <div id="feedback-A2"></div>
+                <button id="check-button-A2" onclick="checkTranslationA2()">Check Translation</button>
+                <button id="next-button-A2" onclick="nextSentenceA2()">Next</button>
+                </div>
+                <div id="score-container-A2" class="score-container-A2 hidden">
+                     <p id="score-A2" class="score-A2 hidden">Score:</p>
+                </div>        
+            </div>
+         </div>        
+    <!-- B1 section content here -->
+      <div class="section-container A3">
+        <a class="section-toggle B1" href="#">Satzbau</a>
+        <div class="content hidden">
+          <!-- B1 section content here -->
+        </div>
+      </div>
+
+      <div class="section-container B2">
+        <a class="section-toggle B2" href="#">B2 öffnen</a>
+        <div class="content hidden">
+          <!-- B2 section content here -->
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <p>Copyright &copy; Institut für Spanische Sprache und Kultur</p>
+    </footer>  
+    <script>
+    window.onload = function(){
+      getSentence();
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,354 @@
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-family: 'Nunito', sans-serif;
+}
+
+/*Translate sentence*/
+.Translate-sentence,
+.Translate-sentence-A11,
+.Translate-sentence-A111,
+.Translate-sentence-A1111,
+.Translate-sentence-A11111 {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Translation input styles */
+#translation-input,
+#translation-input-A11,
+#translation-input-A111,
+#translation-input-A1111,
+#translation-input-A11111 {
+    width: 40%;
+    padding: 0.7em;
+    margin: 0em 0;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+    resize: vertical;
+    font-size: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Feedback styles */
+#feedback,
+#feedback-A11,
+#feedback-A111 {
+    font-size: 1em;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+#feedback.correct,
+#feedback-A11.correct,
+#feedback-A111.correct {
+    color: green;
+}
+
+#feedback.incorrect,
+#feedback-A111.incorrect {
+    color: rgb(1, 1, 1);
+}
+ 
+
+
+.correct {
+    color: green;
+    font-size: 1em;
+    margin-top: em;
+    margin-bottom: 1em;
+  }
+  
+.incorrect {
+
+    color: red;
+    font-size: 1em;
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+
+/* Input container styles */
+.input-container,
+.input-container-A11,
+.input-container-A111,
+.input-container-A11111 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container-A1111 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+}
+    
+.conjugation-input-A1111 {
+    width: 95%;
+    height: 30px;
+    font-size: 1em;
+    text-align: left;
+    margin: 0.8em 0;
+    padding: 1em;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+    resize: vertical;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-right: 2em;
+}
+
+/* Score container styles */
+#score-container,
+#score-container-A11,
+#score-container-A111,
+#score-container-A1111 {
+    text-align: right;
+    padding: 1em;
+    margin-right: 2em;
+    font-size: 1em;
+}
+
+
+/* Button styles */
+button,
+.button-A11,
+.button-A111,
+.button-A1111,
+.button-A11111 {
+    background-color: #1d7e8d;
+    color: white;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 2em;
+    margin-right: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Check button styles */
+#check-button,
+#check-button-A11,
+#check-button-A111,
+#check-button-A1111 {
+    background-color: #00bfd5;
+    color: white;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+#check-button:hover {
+    background-color: #00d3c5;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add the class hidden to the elements you want to hide by default */
+.hidden {
+    display: none;
+}
+
+/* Add space to the h2 class */
+.level-heading {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    margin-left: 0.7em;
+    font-size: 1.5em;
+}
+
+/* Start button*/
+#start-button,
+#start-button-A11,
+#start-button-A111,
+#start-button-A1111,
+#start-button-A11111 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Section toggle */
+.section-toggle,
+.section-toggle-A11,
+.section-toggle-A111,
+.section-toggle-A1111,
+.section-toggle-A11111 {
+font-size: 1.2em;
+margin-bottom: 1em;
+margin-left: 1em;
+cursor: pointer;
+color: #302f2f;
+font-weight: bold;
+text-decoration: none;
+transition: all 0.2s ease-in-out;
+}
+
+.section-toggle:hover,
+.section-toggle-A11:hover,
+.section-toggle-A111:hover,
+.section-toggle-A1111:hover,
+.section-toggle-A11111:hover {
+color: #43c7c5;
+transform: translateY(-2px);
+}
+
+
+/* Not display sentence in Diktat */
+.sentence-A111 {
+    display: none;
+}
+
+/*  Task description  styles */
+#task-description,
+#task-description-A11,
+#task-description-A111,
+#task-description-A1111,
+#task-description-A11111 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: em;
+    font-size: 1em;
+}
+
+/*  Sentence style */
+#sentence,
+#sentence-A11,
+#sentence-A1111 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+/*  Actual Sentence style */
+#actual-sentence,
+#actual-sentence-A11,
+#actual-sentence-A111,
+#actual-sentence-A1111 {
+    text-align: right;
+    padding: 1em;
+    margin-right: 2em;
+    font-size: 1em;
+}
+
+/* Underline the incorrect Sentence in Vokabulary */
+.incorrect-word {
+    text-decoration: underline;
+    color: red;
+    font-size: 1em;
+}
+
+.progress-bar-container {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 12px;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+    padding: 1px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #1d7e8d;
+    width: 0;
+    border-radius: 50px;
+    transition: width 0.3s ease-in-out;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    /* Input styles */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+    font-size: 0.8em;
+    }
+    
+    /* Translation input styles */
+    #translation-input,
+    #translation-input-A11,
+    #translation-input-A111,
+    #translation-input-A1111,
+    #translation-input-A11111 {
+    width: 100%;
+    font-size: 0.8em;
+    }
+    
+    /* Button styles */
+    button,
+    .button-A11,
+    .button-A111,
+    .button-A1111,
+    .button-A11111,
+    #check-button,
+    #check-button-A11,
+    #check-button-A111,
+    #check-button-A1111 {
+    padding: 0.5em 1.5em;
+    font-size: 0.8em;
+    }
+    
+    /* Section toggle */
+    .section-toggle,
+    .section-toggle-A11,
+    .section-toggle-A111,
+    .section-toggle-A1111,
+    .section-toggle-A11111 {
+    font-size: 1em;
+    }
+    
+    /* Task description styles */
+    #task-description,
+    #task-description-A11,
+    #task-description-A111,
+    #task-description-A1111,
+    #task-description-A11111 {
+    padding: 0.5em;
+    font-size: 0.8em;
+    }
+    
+    /* Actual Sentence style */
+    #actual-sentence,
+    #actual-sentence-A11,
+    #actual-sentence-A111,
+    #actual-sentence-A1111 {
+    font-size: 0.8em;
+    }
+    
+    /* Progress bar styles */
+    .progress-bar-container {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 8px;
+    }
+    
+    .progress-bar {
+    box-shadow: none;
+    }
+    
+    }
