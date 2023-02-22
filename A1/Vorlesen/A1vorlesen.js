@@ -19,7 +19,7 @@ document.getElementById("speak-button-A11111").addEventListener("click", functio
   const synth = window.speechSynthesis;
   const utterance = new SpeechSynthesisUtterance(sentence);
   utterance.lang = 'es-ES';
-  utterance.rate = 0.75;
+  utterance.rate = 1;
 
   // Wait for the `voiceschanged` event to be fired before selecting the voice
   synth.onvoiceschanged = function () {
