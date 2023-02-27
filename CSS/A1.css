@@ -1,3 +1,113 @@
+/* Reset default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add font */
+body {
+    margin: 0;
+    font-family: 'Nunito';
+}
+
+/* Header styles */
+header {
+    background-color: #5ca1d0;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 1em;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Drop down menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    background-color: #cdcbcb;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Logo*/
+img {
+    float: right;
+    width: 200px;
+    height: 30px;
+    margin-right: 1em;
+}
+
+
+/* Footer styles */
+footer {
+    margin-top: 2em;
+    background-color: #0079c971;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-family: 'Nunito', sans-serif;
+}
+
 
 /* Translation input styles */
 #translation-input,
