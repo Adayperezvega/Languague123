@@ -1,7 +1,111 @@
+/* Reset default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add font */
+body {
+    margin: 0;
+    font-family: 'Nunito';
+}
+
+/* Header styles */
+header {
+    background-color: #5ca1d0;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 1em;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Drop down menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    background-color: #cdcbcb;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Logo*/
+img {
+    float: right;
+    width: 200px;
+    height: 30px;
+    margin-right: 1em;
+}
+
+
+/* Footer styles */
+footer {
+    margin-top: 2em;
+    background-color: #0079c971;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*Translate sentence*/
@@ -15,6 +119,7 @@ input[type="password"] {
     justify-content: center;
     align-items: center;
 }
+
 /* Translation input styles */
 #translation-input,
 #translation-input-A11,
@@ -52,7 +157,7 @@ input[type="password"] {
 #feedback-A111.incorrect {
     color: rgb(1, 1, 1);
 }
- 
+
 
 
 .correct {
@@ -60,8 +165,8 @@ input[type="password"] {
     font-size: 1em;
     margin-top: em;
     margin-bottom: 1em;
-  }
-  
+}
+
 .incorrect {
 
     color: red;
@@ -88,7 +193,7 @@ input[type="password"] {
     width: 100%;
     padding: 2em;
 }
-    
+
 .conjugation-input-A1111 {
     width: 95%;
     height: 30px;
@@ -194,14 +299,14 @@ button:hover,
 .section-toggle-A111,
 .section-toggle-A1111,
 .section-toggle-A11111 {
-font-size: 1.2em;
-margin-bottom: 1em;
-margin-left: 1em;
-cursor: pointer;
-color: #302f2f;
-font-weight: bold;
-text-decoration: none;
-transition: all 0.2s ease-in-out;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    cursor: pointer;
+    color: #302f2f;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 .section-toggle:hover,
@@ -209,8 +314,8 @@ transition: all 0.2s ease-in-out;
 .section-toggle-A111:hover,
 .section-toggle-A1111:hover,
 .section-toggle-A11111:hover {
-color: #43c7c5;
-transform: translateY(-2px);
+    color: #43c7c5;
+    transform: translateY(-2px);
 }
 
 
@@ -278,7 +383,3 @@ transform: translateY(-2px);
     transition: width 0.3s ease-in-out;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
-  
-
-
-
