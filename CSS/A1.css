@@ -108,6 +108,17 @@ input[type="password"] {
     font-family: 'Nunito', sans-serif;
 }
 
+/*Translate sentence*/
+.Translate-sentence,
+.Translate-sentence-A11,
+.Translate-sentence-A111,
+.Translate-sentence-A1111,
+.Translate-sentence-A11111 {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Translation input styles */
 #translation-input,
